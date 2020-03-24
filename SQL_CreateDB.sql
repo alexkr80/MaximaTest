@@ -1,4 +1,4 @@
--- Скрипт создания базы
+-- РЎРѕР·РґР°РЅРёРµ С‚Р°Р±Р»РёС†
 
 USE [maxima]
 GO
@@ -38,7 +38,7 @@ GO
 ALTER TABLE [dbo].[Company] ADD  CONSTRAINT [DF__Company__Name__05071A1B_Company]  DEFAULT ('') FOR [Name]
 GO
 
-EXEC sys.sp_addextendedproperty @name=N'Description', @value=N'Список организаций' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Company'
+EXEC sys.sp_addextendedproperty @name=N'Description', @value=N'Г‘ГЇГЁГ±Г®ГЄ Г®Г°ГЈГ Г­ГЁГ§Г Г¶ГЁГ©' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Company'
 GO
 
 
@@ -48,7 +48,7 @@ CREATE TABLE [dbo].[DBMS](
 ) ON [PRIMARY]
 GO
 
-EXEC sys.sp_addextendedproperty @name=N'Description', @value=N'Список баз данных' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'DBMS'
+EXEC sys.sp_addextendedproperty @name=N'Description', @value=N'Г‘ГЇГЁГ±Г®ГЄ ГЎГ Г§ Г¤Г Г­Г­Г»Гµ' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'DBMS'
 GO
 
 
@@ -84,7 +84,7 @@ GO
 ALTER TABLE [dbo].[Developer] ADD  CONSTRAINT [DF__Developer__Exper__7F4E40C5_Developer]  DEFAULT ((0)) FOR [ExperienceInYears]
 GO
 
-EXEC sys.sp_addextendedproperty @name=N'Description', @value=N'Список разработчиков' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Developer'
+EXEC sys.sp_addextendedproperty @name=N'Description', @value=N'Г‘ГЇГЁГ±Г®ГЄ Г°Г Г§Г°Г ГЎГ®ГІГ·ГЁГЄГ®Гў' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Developer'
 GO
 
 
@@ -153,7 +153,7 @@ ALTER TABLE [dbo].[DeveloperLanguageTag] ADD  CONSTRAINT [DF__DeveloperLa__Tag__
 GO
 
 
--- Представление
+-- ГЏГ°ГҐГ¤Г±ГІГ ГўГ«ГҐГ­ГЁГҐ
 
 CREATE VIEW [dbo].[viewDeveloper] (
    [Name],
